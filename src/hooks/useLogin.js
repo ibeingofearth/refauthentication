@@ -1,6 +1,8 @@
+// 
 import { GithubAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../config";
 import { useState } from "react";
+import { AuthContext } from "../contexts/AuthContext";
 
 export const useLogin = () => {
   const [error, setError] = useState(false);

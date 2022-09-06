@@ -5,14 +5,13 @@ import { useLogout } from "./hooks/useLogout";
 
 const App = () => {
   const { login, isPending } = useLogin();
-  const { logout } = useLogout();
-
+  
   return (
     <div className="App">
        <button className="btn" onClick={login}>
         {isPending ? "Loading..." : "Login With Github"}
     </button>
-     <button className="btn" onClick={logout}>
+     <button className="btn" onClick={useLogout}>
     Log Out
 </button>
     </div>
